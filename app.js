@@ -1,6 +1,6 @@
 const WebSocket = require("ws");
-const wss = new WebSocket.Server({ port: 8081 }, () => {
-  console.log("Signalling server is now listening on port 8081");
+const wss = new WebSocket.Server({ port: 3001 }, () => {
+  console.log("Signalling server is now listening on port 3001");
 });
 
 wss.broadcast = (ws, data) => {
